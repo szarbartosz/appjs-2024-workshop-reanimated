@@ -27,6 +27,7 @@ export function Bug() {
       >
         {markers.map((marker) => (
           <MapMarker
+            key={marker.id}
             onPress={() => setFocusedMarker(marker)}
             coordinate={{
               latitude: marker.latitude,
