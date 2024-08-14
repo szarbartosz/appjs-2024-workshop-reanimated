@@ -21,10 +21,7 @@ export function Bug() {
 
   return (
     <>
-      <MapView
-        style={{ flex: 1, position: "relative" }}
-        onPanDrag={() => setFocusedMarker(null)}
-      >
+      <MapView style={{ flex: 1 }} onPanDrag={() => setFocusedMarker(null)}>
         {markers.map((marker) => (
           <MapMarker
             key={marker.id}
